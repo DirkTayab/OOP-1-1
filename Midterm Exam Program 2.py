@@ -15,7 +15,7 @@ entry2.pack()
 entry2.place(x=275, y=175)
 def press():
    text = entry1.get()
-   entry2.delete(0, len(text))
+   entry2.delete(0, END)
    entry2.insert(0, text)
    return
 
