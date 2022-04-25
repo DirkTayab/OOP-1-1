@@ -8,13 +8,14 @@ lbl = Label(window, text="Enter your fullname", fg="Red")
 lbl.place(x=50, y=125)
 
 entry1 = Entry(window,bd=2)
-entry1.pack()
 entry1.place(x=275, y=125)
 
 entry2 = Entry(window, bd=2)
+entry2.pack()
 entry2.place(x=275, y=175)
 def press():
    text = entry1.get()
+   entry2.delete(0, len(text))
    entry2.insert(0, text)
    return
 
