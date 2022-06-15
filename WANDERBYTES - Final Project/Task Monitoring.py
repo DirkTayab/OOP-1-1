@@ -142,16 +142,18 @@ def load_tasks():
     try:
         tasks1 = pickle.load(open("tasks1.dat", "rb"))
         List_task1.delete(0, tkinter.END)
-        for tasks1 in tasks1:
-            List_task1.insert(tkinter.END, tasks1)
+        List_task2.delete(1, tkinter.END)
+        List_task3.delete(2, tkinter.END)
+        for task in tasks1:
+            List_task1.insert(tkinter.END, task)
     except:
         tkinter.messagebox.showwarning(title="Warning!", message="Cannot find tasks.dat.")
 
     try:
         tasks2 = pickle.load(open("tasks2.dat", "rb"))
         List_task2.delete(0, tkinter.END)
-        for tasks2 in tasks2:
-            List_task2.insert(tkinter.END, tasks2)
+        for task in tasks2:
+            List_task2.insert(tkinter.END, task)
 
     except:
         tkinter.messagebox.showwarning(title="Warning!", message="Cannot find tasks.dat.")
@@ -159,8 +161,8 @@ def load_tasks():
     try:
         tasks3 = pickle.load(open("tasks3.dat", "rb"))
         List_task3.delete(0, tkinter.END)
-        for tasks3 in tasks3:
-            List_task3.insert(tkinter.END, tasks3)
+        for task in tasks3:
+            List_task3.insert(tkinter.END, task)
 
     except:
         tkinter.messagebox.showwarning(title="Warning!", message="Cannot find tasks.dat.")
