@@ -1,3 +1,8 @@
+#Prerequisite Libraries:
+#Pillow   (py -m pip install Pillow)
+#tkcalendar   (py -m pip install tkcalendar)
+
+
 import tkinter
 import tkinter as tk
 from tkcalendar import DateEntry
